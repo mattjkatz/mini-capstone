@@ -1,0 +1,15 @@
+### Product Index
+GET http://localhost:3000/products
+
+### Product Show
+GET http://localhost:3000/products/5
+
+### Product Create
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Mrs. Puff",
+  "price": "60",
+  "description": "Will help you get your boating license."
+}
