@@ -31,4 +31,10 @@ class ProductsController < ApplicationController
     render json: product.as_json
   end
 
+  def destroy
+    product = Product.find(params["id"])
+    product.destroy
+    render json: "Your product was successfully destroyed! WOO!"
+  end
+
 end
