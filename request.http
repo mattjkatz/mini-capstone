@@ -2,7 +2,7 @@
 GET http://localhost:3000/products
 
 ### Product Show
-GET http://localhost:3000/products/5
+GET http://localhost:3000/products/4
 
 ### Product Create
 POST http://localhost:3000/products
@@ -15,11 +15,11 @@ Content-Type: application/json
 }
 
 ### Product Update
-PATCH http://localhost:3000/products/5
+PATCH http://localhost:3000/products/4
 Content-Type: application/json
 
 {
-  "name": ""
+  "image_url": "https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5kZXJ3YXRlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
 }
 
 ### Product Destroy
