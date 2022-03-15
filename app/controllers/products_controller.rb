@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
     product_id = params["id"]
     all_products = Product.all
     searched_product = all_products.find_by(id: "#{product_id}".to_i)
-    render json: {message: "#{searched_product["name"]} is $#{searched_product["price"]}. #{searched_product["description"]}"}
+    render json: searched_product.as_json(methods: [:is_discounted?, :tax, :total])
   end
 
   def create
