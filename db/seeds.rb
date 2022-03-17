@@ -1,12 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-Product.create(name: "Jerry the Catfish", price: 40, image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aces.edu%2Fblog%2Ftopics%2Ffish-water%2Fmanaging-higher-catfish-feed-prices%2F&psig=AOvVaw07-NUPNP1Kk94miTAytafo&ust=1646876201987000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPiTuIzyt_YCFQAAAAAdAAAAABAD", description: "Jerry the Catfish is a brown catfish with whiskers. He is very cool.")
-Product.create(name: "Larry the Guppy", price: 15, image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.liveaquaria.com%2Fproduct%2F1054%2F%3Fpcatid%3D1054&psig=AOvVaw18lE8n-hpLEsrFQ3jEC_mq&ust=1646876347849000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCODemtTyt_YCFQAAAAAdAAAAABAD", description: "Larry the Guppy is a Small little dude.")
-Product.create(name: "Wilbert", price: 500, image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwhalewatchingauckland.com%2Fblog%2F10-facts-you-didnt-know-about-humpback-whales%2F&psig=AOvVaw1C12utciU2LPwYaqrV4s62&ust=1646876443426000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOC5zP_yt_YCFQAAAAAdAAAAABAJ", description: "Wilbert is very, very big.")
-
-p "All done!"
+Product.create!([
+  {name: "Jerry the Catfish", price: "40.0", image_url: "https://www.agri-pulse.com/ext/resources/Aquaculture/catfish-big-mouth.jpg?1537392824", description: "Jerry the Catfish is a brown catfish with whiskers. He is very cool."},
+  {name: "Mrs. Puff", price: "60.0", image_url: "https://images.medicinenet.com/images/Article/main_image/animals-puffer-fish-pufferfish-marine-ecosystem-ocean-sea-wildlife.jpg", description: "Will help you get your boating license."},
+  {name: "Johnny", price: "45.0", image_url: "https://media.australian.museum/media/dd/images/Largetooth_Flounder_Pseudorhombus_arsius.width-800.f2872e7.jpg", description: "Flat Johnny only exists in the X and Y axis. We are not liable if you are unsatisfied with a 2D pet."},
+  {name: "Larry the Guppy", price: "15.0", image_url: "https://media.istockphoto.com/photos/small-fish-in-the-hands-of-a-man-picture-id830262386?k=20&m=830262386&s=170667a&w=0&h=Rm7DYKveqRjPovUGhgN0YRGdP0wJ5daKrHrMK1poU4o=", description: "Larry the Guppy is a Small little dude."},
+  {name: "Wilbert", price: "500.0", image_url: "https://static01.nyt.com/images/2022/01/25/science/20tb-whales/20tb-whales-mediumSquareAt3X.jpg", description: "Wilbert is very, very big."},
+  {name: "Bob", price: "80.0", image_url: "https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5kZXJ3YXRlcnxlbnwwfHwwfHw%3D&w=1000&q=80", description: "Bob is super rare, in fact he does not even exist..."}
+])

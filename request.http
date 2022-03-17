@@ -9,9 +9,9 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Mrs. Puff",
-  "price": "60",
-  "description": "Will help you get your boating license."
+  "name": "Sr. Puff",
+  "price": "90",
+  "description": "Is a puffer fish"
 }
 
 ### Product Update
@@ -19,7 +19,7 @@ PATCH http://localhost:3000/products/4
 Content-Type: application/json
 
 {
-  "image_url": "https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5kZXJ3YXRlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+  "name": "Mr Hanky"
 }
 
 ### Product Destroy
