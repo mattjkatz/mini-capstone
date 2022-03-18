@@ -19,8 +19,11 @@ class SuppliersController < ApplicationController
       email: params["email"],
       phone_number: params["phone_number"]
     )
-    supplier.save
-    render json: supplier
+    if supplier.save
+      render json: supplier
+    else
+      render json: {error_message: supplier.errors.full_messages}, status: 422
+    end
   end
 
   def update
@@ -28,8 +31,11 @@ class SuppliersController < ApplicationController
     supplier.name = params["name"] || supplier.name
     supplier.email = params["email"] || supplier.email
     supplier.phone_number = params["phone_number"] || supplier.phone_number
-    supplier.save
-    render json: supplier
+    if supplier.save
+      render json: supplier
+    else
+      render json: {error_message: supplier.errors.full_messages}, status: 422
+    end
   end
 
   def destroy
