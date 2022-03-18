@@ -13,4 +13,8 @@ class SuppliersController < ApplicationController
     render json: searched_supplier
   end
 
+  def create
+
+  end
+
 end
