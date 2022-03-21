@@ -53,3 +53,30 @@ Content-Type: application/json
 
 ### Supplier Destroy
 DELETE http://localhost:3000/suppliers/5
+
+### IMAGES ###
+### Image index
+GET http://localhost:3000/images
+
+### Image show
+GET http://localhost:3000/images/3
+
+### Image create
+POST http://localhost:3000/images
+Content-Type: application/json
+
+{
+  "url": "https://ih1.redbubble.net/image.2240276274.2643/mo,small,flatlay,product_square,600x600.jpg",
+  "product_id": 2
+}
+
+### Image update
+PATCH http://localhost:3000/images/8
+Content-Type: application/json
+
+{
+  "product_id": 2
+}
+
+### Images delete
+DELETE PATCH http://localhost:3000/images/8
