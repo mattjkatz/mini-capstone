@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
 
   def index
+    pp current_user
     all_products = Product.all
     render json: all_products
   end
