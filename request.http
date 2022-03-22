@@ -79,4 +79,29 @@ Content-Type: application/json
 }
 
 ### Images delete
-DELETE PATCH http://localhost:3000/images/8
+DELETE http://localhost:3000/images/8
+
+### USERS ###
+### Users index
+GET http://localhost:3000/users
+
+### Users create
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "test",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### SESSIONS ###
+### Sessions Create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
