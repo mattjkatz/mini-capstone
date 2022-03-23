@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # product routes
   get "/products" => "products#index"
-  get "/products/:id" => "products#show"
   post "/products" => "products#create"
+  get "/products/:id" => "products#show"
   patch "/products/:id" => "products#update"
   delete "/products/:id" => "products#destroy"
   # supplier routes
@@ -20,6 +20,10 @@ Rails.application.routes.draw do
   # user routes
   get "/users" => "users#index"
   post "/users" => "users#create"
-  # user sessions
+  # sessions routes
   post "/sessions" => "sessions#create"
+  # orders routes
+  get "/orders" => "orders#index"
+  post "/orders" => "orders#create"
+  get "/orders/:id" => "orders#show"
 end
