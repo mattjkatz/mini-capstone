@@ -108,6 +108,10 @@ Content-Type: application/json
 }
 
 ### ORDERS
+### Order Index
+GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwODM2NzF9.c_O0ga4G9GpoyOIoHxE6_MTABDn1DJ9Ar8R72OrPsNU
+
 ### Order Create
 POST http://localhost:3000/orders
 Content-Type: application/json
@@ -115,12 +119,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwODM2N
 
 {
   "product_id": 1,
-  "quantity": 3,
-  "subtotal": 10.00
+  "quantity": 3
 }
 
 ### Order Show
 GET http://localhost:3000/orders/1
-
-### Order Index
-GET http://localhost:3000/orders
