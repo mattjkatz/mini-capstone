@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+
   def create
     order = Order.new(
       user_id: params["user_id"],
@@ -11,4 +12,10 @@ class OrdersController < ApplicationController
     order.save
     render json: order
   end
+
+  def show
+    order = Order.find(params["id"])
+    render json: order
+  end
+
 end
