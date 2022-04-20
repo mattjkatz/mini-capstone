@@ -1,9 +1,9 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgyNTc2NDB9.0nKRZqTikA2cNsNSKrbKNOTytNhLRoBnlHPYShlCnTY
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTA1ODQzNTV9.1zhe1-CMtV_JHXBq8w452H0rxDvpoXEKUSJJZAlxxLQ
 
 ### PRODUCTS ###
 ### Product Index
 GET http://localhost:3000/products
-Authorization: Bearer {{jwt}}
+# Authorization: Bearer {{jwt}}
 
 ### Product Show
 GET http://localhost:3000/products/4
