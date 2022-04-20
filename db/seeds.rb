@@ -1,3 +1,9 @@
+Supplier.create!([
+  {name: "Ocean", email: "ocean@test.com", phone_number: "123-123-1234" }, 
+  {name: "Lake", email: "lake@test.com", phone_number: "456-456-4567" }, 
+  {name: "The River", email: "river@test.com", phone_number: "789-789-7890" }
+  ])
+
 Product.create!([
   {name: "Jerry the Catfish", price: "40.0", image_url: "https://www.agri-pulse.com/ext/resources/Aquaculture/catfish-big-mouth.jpg?1537392824", description: "Jerry the Catfish is a brown catfish with whiskers. He is very cool."},
   {name: "Mrs. Puff", price: "60.0", image_url: "https://images.medicinenet.com/images/Article/main_image/animals-puffer-fish-pufferfish-marine-ecosystem-ocean-sea-wildlife.jpg", description: "Will help you get your boating license."},
