@@ -1,8 +1,8 @@
-Supplier.create!([
-  {name: "Ocean", email: "ocean@test.com", phone_number: "123-123-1234" }, 
-  {name: "Lake", email: "lake@test.com", phone_number: "456-456-4567" }, 
-  {name: "The River", email: "river@test.com", phone_number: "789-789-7890" }
-  ])
+# Supplier.create!([
+#   {name: "Ocean", email: "ocean@test.com", phone_number: "123-123-1234" }, 
+#   {name: "Lake", email: "lake@test.com", phone_number: "456-456-4567" }, 
+#   {name: "The River", email: "river@test.com", phone_number: "789-789-7890" }
+#   ])
 
 Product.create!([
   {name: "Jerry the Catfish", price: "40.0", description: "Jerry the Catfish is a brown catfish with whiskers. He is very cool."},
