@@ -5,10 +5,10 @@
 #   ])
 
 Product.create!([
-  {name: "Jerry the Catfish", price: "40.0", description: "Jerry the Catfish is a brown catfish with whiskers. He is very cool."},
-  {name: "Mrs. Puff", price: "60.0", description: "Will help you get your boating license."},
-  {name: "Johnny", price: "45.0", description: "Flat Johnny only exists in the X and Y axis. We are not liable if you are unsatisfied with a 2D pet."},
-  {name: "Larry the Guppy", price: "15.0", description: "Larry the Guppy is a Small little dude."},
-  {name: "Wilbert", price: "500.0", description: "Wilbert is very, very big."},
-  {name: "Bob", price: "80.0", description: "Bob is super rare, in fact he does not even exist..."}
+  {name: "Jerry the Catfish", price: "40.0", description: "Jerry the Catfish is a brown catfish with whiskers. He is very cool.", supplier_id: 1},
+  {name: "Mrs. Puff", price: "60.0", description: "Will help you get your boating license.", supplier_id: 1},
+  {name: "Johnny", price: "45.0", description: "Flat Johnny only exists in the X and Y axis. We are not liable if you are unsatisfied with a 2D pet.", supplier_id: 1},
+  {name: "Larry the Guppy", price: "15.0", description: "Larry the Guppy is a Small little dude.", supplier_id: 1},
+  {name: "Wilbert", price: "500.0", description: "Wilbert is very, very big.", supplier_id: 1},
+  {name: "Bob", price: "80.0", description: "Bob is super rare, in fact he does not even exist...", supplier_id: 1}
 ])
